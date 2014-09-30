@@ -1,0 +1,245 @@
+body 
+{
+	background: #fff;
+	
+}
+/***********************************
+*****************CONTAINER************/
+.container{
+	height: 80%;
+	width: 80%;
+	border : 20px solid #000;
+	border-radius: 4px;
+	text-align: center;
+	background: #000;
+	margin-top: 10px;
+	background: url(../img/img1.jpg) no-repeat;
+	background-size: cover;	
+
+}
+/***********************************
+*****************HEADER************/
+.header ul li 
+{	
+	display: inline-block;
+	font-size: 1em;
+	color : brown;
+	margin-right: 120px;
+	margin-left: 120px;
+	margin-top: 20px;
+	border-bottom: 4px solid grey;
+	line-height: 45px;
+}
+.header ul li a 
+{
+	font-size: 1em;
+	color: brown;
+	font-weight: bolder;
+}
+.header ul .appname
+{
+	font-size: 3em;
+	color: grey;
+	font-weight: bolder;
+	border-bottom: none;
+	margin-left: 10px;	
+	font-family: cursive lato;
+}
+/***********************************
+*****************USER INPUT************/
+.user_input
+{
+	width :50%;
+	height:40px;
+	text-align: center;
+	margin-left: 20px;
+	background: url(../img/mic.PNG)no-repeat;
+	color:#000;
+	font-size: 1em;
+	font-weight: bolder;
+	border:5px solid grey;
+	border-radius: 2px;
+	background-color: #fff;
+	margin-top: 25px;
+}
+.user_input:focus 
+{ 
+	outline-color: #fff; 
+
+}
+/***********************************
+*****************BUTTONS************/
+button
+{
+	width : 100px;
+	height: 40px;
+	border-color:#fff;
+	border-radius:0.2em;
+	text-align: center;
+	/*margin-top: 80px;*/
+	background-color: brown;
+	color: #fff;
+	font-size: bolder;
+	font-size: 1em;
+	border : 5px solid grey;
+	border-radius: 4px;
+}
+button:focus 
+{ 
+	outline-color: #fff; 
+
+}
+/***********************************************
+*****************WORLD CHARTS SECTION************/
+.trackswrapper
+{
+	/*width: 80%;*/
+	margin-left: 20px;
+	margin-right: 80px;
+	margin-top: 50px;
+	padding-top: 30px;
+}
+.toptracks li 
+{
+	display:inline-block;
+	padding-left: 5px;
+	padding-right:5px;
+	text-align: center;
+	background-color:#000;
+	padding-top: 30px;
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-top: 10px;
+}
+.artistcontainer
+{
+		/*width: 80%;*/
+		margin-left: 20px;
+		margin-right: 80px;
+}
+.artistList li {
+	display:inline-block;
+	padding-left: 5px;
+	padding-right:5px;
+	text-align: center;
+	background-color:#000;
+	padding-top: 30px;
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-top: 10px;
+}
+/***********************************
+*****************COUNTRY CHARTS SECTION************/
+.countrytrackchartcontainer
+{
+	height: 50%;
+	/*width: 90%;*/
+	opacity: 0.9;
+	display: inline-block;
+	margin-left:20px;
+	margin-right:80px;
+
+}
+.countrytoptrackslist li ,.countryartsistcharts li 
+{
+	display: inline-block;
+	padding-left:5px;
+	padding-right:5px;
+	text-align: center;
+	background-color: #000;
+	padding-top: 30px;
+	margin-right:5px;
+	margin-left:5px;
+	margin-top: 10px;
+	
+}
+
+.countryartistchartContainer
+{
+	/*height: 90%;
+	width: 80%;*/
+	opacity: 0.9;
+	display: inline-block;
+	margin-left: 20px;
+	margin-right:80px;
+}
+/***********************************
+*****************IMAGES************/
+img 
+{
+	height: 150px;
+	width : 150px;
+	border: 2px solid black;
+/*order-radius: 1em;*/
+}
+.img{
+	height: 40px;
+	width : 60px;
+	border :none;
+	border-color: none;
+	
+}
+.loading
+{
+	border :none;
+	border-color: none;
+	margin-left: 140px;
+}
+/***********************************
+*****************PARAGRAPHS************/
+p 
+{
+	font-size: 0.7em;
+	font-family: serif;
+	text-align: center;
+	font-weight: bolder;
+	
+
+}
+/***********************************
+*****************ANCHORS************/
+a
+{
+	text-decoration:none;
+	list-style: none;
+	font-size: 1.5em;
+	color : grey;
+}
+a:visited 
+{ 
+	color: #fff; 
+}
+a:hover 
+{
+	text-decoration: none;
+}
+/***********************************
+*****************HEADING************/
+h3
+{
+	font-family:serif;
+	font-size: 1em;
+	font-weight: bolder;
+	margin-right:400px;
+	color:grey;
+	border-bottom: solid brown;
+	width: 100%;
+	line-height: 55px;
+}
+/***********************************
+*****************FOOTERS************/
+.footer
+{
+	width:100%;
+	padding:5px;
+	bottom:0;
+	margin-right: 0;
+	margin-left:0;
+	text-align: center;
+}
+.footer ul li 
+{
+	display: inline-block;
+	text-align: center;
+	padding:5px 15px;
+}

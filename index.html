@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html ng-app = "chartsApp">
+<head>
+	<meta charset = "UTF-8">
+	<title>InstaFeed</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="css/mian.css"/>
+	<link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/responsive.css">
+	<meta name="viewport"content="width =device-width,initial-scale= 1.0"> 
+</head>
+<body ng-controller = "appcontroller as appctrl" >
+	<div class = "container">
+		<div class="header">
+			<ul>
+				<li class="appname">e-musiqChart</li> 
+				<li><a href="index.html">Home</a></li>
+			</ul>
+		</div>
+		<input type = "text" class ="user_input" placeholder="Search country tracks and artists " value= "Nigeria" ng-model="userinput"/>
+		<button ng-click="fetchAll()">Go</button>
+		<div class="trackswrapper" ng-hide ="hidetrcks">
+			<ul class ="toptracks">
+				<h3 ng-hide="wtrackheader">World Top five Tracks</h3>
+				<li ng-repeat="wtrack in trakx">
+					<img ng-src="{{wtrack.image[3]['#text']}}"/><a ng-href="{{wtrack.artist.url}}"><p>{{wtrack.name}}</p></a>
+				</li>
+			</ul>
+		</div>
+		<div class ="artistcontainer" ng-hide="hideartist">
+			<ul class="artistList">
+				<h3 ng-hide="wartistheader"> World Top Ten Artists</h3>
+				<li ng-repeat ="artist in artists">
+					<img ng-src="{{artist.image[3]['#text']}}"/><a ng-href="{{artist.url}}"><p>{{artist.name}}</p></a>
+				</li>
+			</ul>
+		</div>
+		<div class="countrytrackchartcontainer">
+			<img src="img/loading.gif" ng-show = "loading" class="loading"/>
+			<ul class="countrytoptrackslist">
+			<h3 ng-hide="trackheader">Top five Tracks</h3>
+				<li ng-repeat="track in trackchart">
+					<img ng-src="{{track.image[3]['#text']}}"/><a ng-href="{{track.url}}"><p>{{track.name}}</p></a>
+				</li>
+			</ul>
+		</div>
+			<!--Top Ten Artists From a Country -->
+		<div class="countryartistchartContainer">
+			<ul class = "countryartsistcharts">
+			<h3 ng-hide="artistheader">Top Ten Artist</h3>
+				<li ng-repeat = "artist in artistchart">
+					<img ng-src="{{artist.image[3]['#text']}}"/><a ng-href="{{artist.url}}"><p>{{artist.name}}</p></a>
+				</li>
+			</ul>
+		</div>
+		<div class="footer">
+			<ul>
+				<li ><a href = "facebook.com"><img src= "img/facebook.jpg" class="img"></a></li>
+				<li ><a href = "twitter.com"><img src= "img/twitter.jpg" class="img"></a></li>
+				<li><a href = "music.com"><img src= "img/logo1.PNG" class="img"></a></li>
+			</ul>
+		</div>	
+	</div>
+	<script type="text/javascript" src="js/angular.js"></script>	
+	<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+	<script type="text/javascript" src="js/charts.js"></script>
+</body>
+</html>
