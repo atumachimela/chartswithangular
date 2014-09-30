@@ -1,0 +1,110 @@
+@media screen and (m-width:320px)
+{
+	/***********************************
+	*****************CONTAINER************/
+	.container
+	{
+		background: url(../img/img4.jpg);
+
+	}
+
+	/***********************************
+	*****************HEADER************/
+	.header ul li 
+	{	
+		border-bottom : 0 none;
+
+	}
+	.header ul li a 
+	{
+		
+
+	}
+	.header ul .appname
+	{
+		margin: 0 auto ;
+		
+
+	}
+	/***********************************
+	*****************USER INPUT************/
+	.user_input
+	{
+		width : 100%;
+		padding-right: 20px;
+		padding-left: 20px;
+		font-size: 0.9em;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+
+	/***********************************************
+*****************WORLD CHARTS SECTION************/
+	.trackswrapper
+	{
+		text-align: center;	
+	}
+	.toptracks
+	{
+		text-align: center;
+		background-color: green;
+	}
+	
+	.footer ul li 
+	{
+		display: block;
+
+	}
+
+	}
+	@media screen and (max-width:480px)
+	{
+
+	/***********************************
+	*****************CONTAINER************/
+	.container
+	{
+		background: url(../img/img4.jpg);
+	}
+
+	/***********************************
+	*****************HEADER************/
+	.header ul li 
+	{	
+		border-bottom : 0 none;
+		margin: 0 auto;
+
+	}
+	.header ul li a 
+	{
+		margin-right:80px;
+		margin-left:25px;
+
+	}
+	.header ul .appname
+	{
+		margin: 0 auto ;
+		margin-right:55px;
+
+	}
+	/***********************************
+	*****************USER INPUT************/
+	.user_input
+	{
+		width : 100%;
+		padding-right: 20px;
+		padding-left: 20px;
+		font-size: 0.9em;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+	/**********************************
+	************FOOTER*****************/
+	.footer ul li 
+	{
+		display: block;
+		margin-right: 20px;
+	}
+
+	}
+	
